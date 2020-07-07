@@ -1,0 +1,84 @@
+body{
+    background: url(../imagenes/vista.jpg);
+    background-size:100% 100%;
+    background-attachment: fixed;
+    
+}
+.menu{
+    background: ;
+}
+.menu a {
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+    color: black;
+    font-family: monospace;
+    font-weight: bold;
+}
+.menu a:hover {
+    background: black;
+    color: white;
+}
+table{
+    font-family: sans-serif;
+}
+table th{
+    font-size: 15px;
+    padding: 5px;
+    }
+table td{
+    font-size: 15px;
+    padding: 5px;
+}
+table td a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2px 9px ;
+    text-align: center;
+    
+}
+table td a span{
+    padding: 5px;
+    color: aliceblue;
+}
+table td a .icon-write{background:green}
+table td a .icon-bin{background:red}
+h1{
+    text-align: center;
+}
+.contenedor{
+    background:  rgba(34, 87, 150, 0.7);
+    width: 30%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: -22px -5px 46px #366cdf;
+}
+.contenedor form{
+    padding: 10px;
+}
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color:black;
+}
+input[type="text"],
+input[type="number"]{
+    width: 90%;
+    height: 40px;
+    background: rgba(0,0,0,0);
+    border: 2px solid rgba(34, 87, 150, 0.7);
+    outline:0px;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="submit"],
+input[type="reset"]{
+    
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+

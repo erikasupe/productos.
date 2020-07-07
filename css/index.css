@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+*{
+     box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    font-family: 'Roboto',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ body{
+background: white
+    
+}
+
+header {
+	width: 100%;
+    display:fixed;
+}
+ 
+header nav {
+	background:rgba(215, 123, 44, 0.9);
+	z-index:1000;
+	width:100%;
+    
+}
+header nav img {
+	
+    width: 150px;
+    height: 30px;
+    background-size:cover;
+    text-align: center;
+    padding-top: 5px;
+    
+} 
+.menu_bar{
+    display: none;
+}
+header nav ul {
+	list-style:none;
+    margin-left: 10px;
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover:not(.active) {
+	background: #424449;
+}
+.active{
+    background:#424449;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ 
+header nav ul li a span {
+	margin-right:10px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	background:rgba(215, 123, 44, 0.9);
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+    padding: 0px;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid #fff;
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+
+    
+}
+/** Presentacion**/
+.pre{
+    background: ;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    }
+.pre h2{
+    text-align: center;
+    font-weight: 500;
+    color:rosybrown;
+}
+.pre p{
+    font-size: 25px;
+    text-align:inherit;
+    font-weight: 500;
+    padding: 8px;
+}
+/**imagenes **/
+.grid{
+    width: 790px;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.grid .grid_img{
+    width: 100%; 
+    text-align: center;
+    
+}
+.grid_img img{
+     width: 200px;
+    height: 250px;
+    margin: 6px;
+    border-radius: 5px ;
+    padding: 2px;
+}
+    
+
+/** imagenes promocionar **/
+.pro{
+    background: #424449;
+    width: 80%;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+    color: black;
+}
+.pro p{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+}
+.linea{
+    border-top:5px solid white;
+}
+.pro .imagenes{
+    width: 100%; 
+    text-align: center;
+
+}
+
+.imagenes img{
+    width: 300px;
+    height: 180px;
+    margin: 6px;
+    padding: 2px;
+    border-radius: 9px;
+}
+
+.blog{
+    width: 100%;
+    height: 500px;
+    margin-top: 0;
+    position: relative;
+    background-image: url(../imagenes/fon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blog:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(129, 121, 121, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.info h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+footer {
+    background:#424449;
+}
+footer p{
+    font-family:fantasy;
+    text-align: center;
+    font-size:7;
+    color:black;
+}
+.pie{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+}
+.pie .iconos{
+    widows: 50px;
+    padding: 10px;
+} 
+    
+.pie li{
+    text-align: center;
+    list-style: none;
+}
+.pie li span{
+    
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 80px;
+    border: solid white;
+    font-size: 80px;
+    justify-content: center;
+}
+.pie .iconos p{
+    color:white;
+    text-align: center;
+    padding: 8px;
+
+}
+
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background: #424449;
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+    header nav img{
+        display: none;
+    }
+ 
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right: 100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid ;
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+}
+
+
+@media only screen and (max-width:800px){
+    .pre{
+        width: 70%;
+        font-size: 20px;
+        margin: auto;
+    }
+    .pre p{
+          font-size: 15px;
+    }
+    
+    
+    .pro{
+        width: 90%;
+    }
+    
+    .pro .imagenes{
+        max-width:100%;
+        margin: auto;
+    
+    }
+    .pro .imagenes img{
+    width:40%;
+    height: 100px;    
+    display: inline-block;
+    }
+     
+    .grid{
+        width: 90%;
+    }
+    
+    .grid .grid_img{
+        max-width:80%;
+        margin: auto;
+    
+    }
+    .grid .grid_img img{
+     width:25%;
+    height: 100px;;    
+    }
+    footer{
+        width:100%;
+    }
+    footer p {
+        font-size: 15px;
+    }
+    .pie{
+        width: 100%;
+    }
+    .pie  li span{
+        font-size: 30px;
+    }
+    .social{
+        width:100%;
+    }
+    .social ul{
+        width: 100%;
+    }
+    
+ 
+    
+}
+ 

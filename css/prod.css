@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+     box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    font-family: 'Roboto',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ body{
+     
+    
+}
+/** menu**/
+
+header {
+	width: 100%;
+    display:fixed;
+}
+ 
+header nav {
+	background:rgba(215, 123, 44, 0.9);
+	z-index:1000;
+	width:100%;
+    
+}
+    
+.menu_bar{
+    display: none;
+}
+header nav ul {
+	list-style:none;
+     margin-left: 10px;
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+   
+}
+ 
+header nav ul li:hover:not(.active) {
+	background: #424449;
+}
+.active{
+    background:#424449;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ 
+header nav ul li a span {
+	margin-right:10px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	background:rgba(215, 123, 44, 0.9);
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+    padding: 0px;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid #fff;
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+    
+
+   
+/** presentacón **/
+
+.blog{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/img3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blog:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 81, 235, 0.76);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.info h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+/** pie de página**/
+footer {
+    background:#424449;
+}
+footer p{
+    font-family:fantasy;
+    text-align: center;
+    font-size:7;
+    color:black;
+}
+.pie{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+}
+.pie .iconos{
+    widows: 50px;
+    padding: 10px;
+} 
+    
+.pie li{
+    text-align: center;
+    list-style: none;
+}
+.pie li span{
+    
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 80px;
+    border: solid white;
+    font-size: 80px;
+    justify-content: center;
+}
+.pie .iconos p{
+    color:white;
+    text-align: center;
+    padding: 8px;
+
+}
+/** responsive menu **/
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#424449;
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+    
+ 
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right: 100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+}
+@media only screen and (max-width:800px){
+    .pre{
+        width: 70%;
+        font-size: 20px;
+    }
+    .pre p{
+          font-size: 15px;
+    }
+    footer{
+        width:100%;
+    }
+    footer p {
+        font-size: 15px;
+    }
+    .pie{
+        width: 100%;
+    }
+    .pie  li span{
+        font-size: 30px;
+    }
+    th: 100%;
+    }
+    
+ 
+    
+}
+ 

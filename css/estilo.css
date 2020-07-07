@@ -1,0 +1,160 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+   
+    background: url(../imagenes/o.jpg);
+     background-size:100% 100%;
+    background-attachment: fixed;
+}
+.container-all{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 35px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    
+}
+.cnt-form{
+    width: 80%;
+    padding: 40px;
+    background: white;
+}
+.logo{
+    width: 150px;
+    display: block;
+    margin: auto;    
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+.title h1{
+    text-align: justify;
+}
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color:  #7a7a7a;
+}
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    height: 40px;
+    background: rgba(0,0,0,0);
+    border: 0px;
+    outline:0px;
+    border-bottom: 5px solid rgba(84, 93, 107, 0.8);
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .5s ease;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+    border-bottom: 5px solid rgba(44, 105, 105, 0.8);
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    color: black;
+    border: 0px;
+    border-radius: 6px;
+    font-weight: 300;
+    cursor: pointer;
+    background: rgba(44, 103, 143, 0.274);
+    font-size: 18px;
+}
+input[type="submit"]:hover{
+    background:  rgba(83, 125, 194, 0.8);
+}
+.footer{
+    display: block;
+    margin: 50px;
+    text-align: center;
+    color:#7a7a7a;
+    font-weight: 500;
+    
+}
+.footer p{
+    color:  rgba(83, 125, 194, 0.8);
+    font-weight: 500;
+}
+/*Lado derecho**/
+.cnt-text{
+    width: 100%;
+    background-image:url(../imagenes/agri.png);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    position: relative;
+    
+}
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(83, 125, 194, 0.8);
+    opacity: 0.8;
+}
+.title-des{
+    position: relative;
+    top: 80px;
+    color: white;
+    font-weight: 300px;
+    font-size: 40px;
+    text-align: justify;
+}
+.text-des{
+    position: relative;
+    top: 110px;
+    color: white;
+    font-size: 20px;
+    font-weight: 200px;
+}
+
+/** Texto de Error**/
+.msg-error{
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+h10{
+    color:brown; 
+    text-align: center;
+    margin-left: 500px;
+    font-weight: 300;
+    border: solid 2px;
+   
+}
+/**responsive**/
+@media only screen and (max-width:800px){
+    .cnt-text{
+        display:none;
+    }
+    .cnt-form{
+        margin: auto;
+        width:80%;
+        background:white;
+        padding: 40px;
+        border-radius: 5px;
+        
+    }
+}
